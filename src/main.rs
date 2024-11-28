@@ -45,7 +45,7 @@ fn infer_image_format(image_bytes: &[u8]) -> Option<&'static str> {
 struct Shape {
     label: String,
     points: Vec<(f64, f64)>,
-    group_id: Option<String>,
+    group_id: Option<i32>,
     shape_type: String,
     description: Option<String>,
     mask: Option<String>,
